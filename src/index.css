@@ -1,13 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  background: #ff00001a;
+  margin: 0 4px;
+  padding: 5px;
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.ant-input-number-group-addon,
+.ant-input-number-group-wrapper-status-error .ant-input-number-group-addon {
+  color: #565353;
+  font-size: 0.875rem;
+  border-color: #d9d9d9;
 }
